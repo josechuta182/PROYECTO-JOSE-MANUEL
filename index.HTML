@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAGINA WEB</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bxSlider -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- IZQUIERDA -->
+        <div class="info">
+
+            <!-- LOGO -->
+            <img src="imagenes/logo.png" alt="logo" class="logo">
+
+            <!-- TITULO -->
+            <h1>
+                BIENVENIDOS 
+                A MI <br>
+                PROYECTO
+            </h1>
+
+            <!-- MENU -->
+            <nav>
+             <a href=" ESPERO LES GUSTE "> ESPERO LES GUSTE</a>
+            </nav>
+
+              <!-- SECCIÓN PRINCIPAL -->
+<section id="pasatiempo" class="inicio">
+    <h1>MI PASATIEMPO</h1>
+    
+    <!-- Aquí va tu flecha -->
+    <a href="#footer" class="flecha-bajar">
+        <i class="fas fa-arrow-down"></i>
+    </a>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer id="footer">
+ <footer-menu">
+    <a href="MIPASATIEMPOS.HTML">inicio</a>
+  
+  </footer>  
+</footer>
+
+            </nav>
+
+        </div>
+
+        <!-- DERECHA -->
+        <div class="slider-box">
+               <video class="video" autoplay muted loop>
+                <source src="videos.mp3/video.mp7.mp4"type="video/mp4">
+              </video>
+            <div class="slider">
+                <div>
+                    <img src="imagenes/imagen5.jpg">
+                </div>
+
+                <div>
+                    <img src="imagenes/imagen2.jpg">
+                </div>
+
+                <div>
+                    <img src="imagenes/imagen4.jpg">
+                </div>
+
+                <div>
+                    <img src="imagenes/imagen3.jpg">
+                </div>
+
+                <div>
+                    <img src="imagenes/imagen1.jpg">
+                </div>
+                <div>
+                    <img src="imagenes/imagen11.jpg">
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- BxSlider -->
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <!-- ACTIVAR SLIDER -->
+    <script>
+
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true,
+                pager: true,
+                controls: true
+            });
+        });
+
+    </script>
+<footer class="footer">
+    
+    <div class="footer-menu">
+        <a href="INICIO.HTML" class="ACTIVAR">Inicio</a>
+
+                <a href="INICIO SESION.HTML">
+                  Inicio Sesión <br>
+                </a>
+                <a href="REGISTRO.HTML">
+                  Registrarse <br>
+                </a>
+                <a href="RECUPERAR.HTML">
+                  Restablecer contraseña <br>
+                </a>
+    </div>
+
+    <hr>
+
+    <div class="footer-copy">
+        <p>©JOSE MANUEL AJVIX CHUTA</p>
+        <p> INGENIERIA EN SISTEMAS DE INFORMACION Y CIENCIAS DE LA COMPUTACION </p>
+        <p>Introducción a los sistemas de computación</p>
+    </div>
+
+
+      <div class="footer-icons">
+        <a href="mailto:tu-jajvixc1@miumg.edu.gt">
+        <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.facebook.com/tu-josechuta" target="_blank"> 
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/tu-ChutaAjvix" target="_blank">
+        <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/tu-josmanuel6832?igsh=djVva3g2cm40M2Jw" target="_blank">
+        <i class="fab fa-instagram"></i>
+        </a>
+
+    </div>
+
+</footer>
+</body>
+</html>
