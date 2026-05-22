@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pasatiempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; /* Color gris claro liso */
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center; 
+  gap: 25px; 
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+.tarjeta {
+  background: #000000; 
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+.tarjeta p {
+  font-size: 14px;
+  padding: 0 15px 20px;
+  color: #555;
+}
+.tarjeta {
+  transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05); /* 5% más grande */
+}
+
+.video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  color: white; /* para que el texto se vea sobre el video */
+}
+
+.contenedor {
+  position: relative;
+  z-index: 1; /* para que quede encima del video */
+}
+
+
+</STYLe>
+<body>
+    <video class=" video-fondo" autoplay muted loop>
+        <source src="videos.mp3/video.mp8.mp4" type="video/mp4">
+    </video>
+      <h1>SOBRE MI </h1>
+
+<div class="contenedor">
+  <div class="tarjeta">
+    <img src="imagenes/imagen5.jpg" alt="">
+    <h3>Mi Perfil</h3>
+    <p>Me considero una persona responsable y curiosa. 
+        Estudio para dedicarme a la tecnología y disfruto enfrentar retos nuevos
+         que me ayuden a crecer.</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/imagen7.jpg" alt="">
+    <h3>Mis Estudios</h3>
+    <p> Actualmente estudio la faculta de ingenieria en sistema Me interesa todo lo relacionado con tecnología, bases de datos y programación
+        Me esfuerzo por entender bien cada tema y aplicarlo en proyectos prácticos. </p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/imagen6.jpg" alt="">
+    <h3>Mis Hobbies</h3>
+    <p> Mis hobbies son tocar la batería, pasar tiempo con Dios y aprender cosas nuevas
+         Me gusta hacer actividades que me ayuden a crecer en lo personal y espiritual.</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/imagen10.jpg" alt="">
+    <h3>Metas</h3>
+    <p>Mi meta es graduarme de mi carrera y convertirme en desarrollador profesional
+         También quiero crecer en mi relación con Dios y usar lo que aprenda para ayudar a los demás. </p>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
