@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* BODY */
+body{
+    margin: 0;
+    padding: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #14aed8;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card{
+    width: 320px;
+
+    background: #035d84;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+
+    transition: 0.5s;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+/* HOVER */
+.card:hover{
+    transform: translateY(-15px) scale(1.03);
+
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+.card img{
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    background: rgb(0, 47, 37);
+
+    padding: 10px;
+
+    transition: 0.5s;
+}
+/* EFECTO IMAGEN */
+.card:hover img{
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* TITULO */
+.card h2{
+    margin-top: 20px;
+
+    font-size: 35px;
+}
+
+/* TEXTO */
+.card p{
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+}
+
+/* LINEA ANIMADA */
+.card::before{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 6px;
+
+    background: rgb(0, 0, 0);
+
+    transition: 0.5s;
+}
+
+/* ANIMACION */
+.card:hover::before{
+    left: 0;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="contenedor">
+         <video class="video" autoplay muted loop>
+                <source src="videos.mp3/video.mp2.mp4"type="video/mp4">
+              </video>
+
+    <!-- CARD 1 -->
+    <div class="card">
+
+        <img src="imagenes/valores.png" alt="">
+
+        <h2> MIS VALORES</h2>
+
+        <p>
+          Soy una persona creativa, responsable y comprometida
+          Dios guía mi vida y la música es una de mis mayores pasiones 
+          Siempre busco aprender, mejorar y dar lo mejor de mí en cada proyecto.
+        </p>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+
+        <img src="imagenes/mision.png.jpg" alt="">
+
+        <h2> MI MISIÓN</h2>
+
+        <p>
+           Seguir aprendiendo en la universidad y crecer personal y profesionalmente,
+            desarrollando proyectos creativos con dedicación, 
+            fe en Dios y pasión por la música y la tecnología.
+        </p>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+
+        <img src="imagenes/vision.png" alt="">
+
+        <h2> MI VISIÓN</h2>
+
+        <p>
+       Convertirme en un profesional exitoso,
+        creando proyectos innovadores y cumpliendo mis metas con esfuerzo, 
+        creatividad y la guía de Dios.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
